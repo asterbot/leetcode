@@ -16,12 +16,16 @@ public:
 
         for (char &c: s){
             if (c=='(' || c=='{' || c=='[') stack.push_back(c);
-            else if ((c==')' && stack.back()!='(') ||
+            else if (stack.size() == 0) return false;
+            else if (
+                    (c==')' && stack.back()!='(') ||
                     (c=='}' && stack.back()!='{') ||
-                    (c==']' && stack.back()!='[')) return false;
+                    (c==']' && stack.back()!='[')
+            ) return false;
+            else if (stack.size()>0) stack.pop_back();
         }
 
-        return true;
+        return stack.size()==0;
     }
 };
 // @lc code=end
