@@ -25,7 +25,7 @@
 ### Stack
 
 - [x] [Valid parentheses](neetcode-150/2_stack/20.valid-parentheses.cpp)
-- [ ] Min stack
+- [x] [Min stack](neetcode-150/2_stack/155.min-stack.cpp)
 - [ ] Evaluate reverse polish notation
 - [ ] Daily Temperatures
 - [ ] Car Fleet
