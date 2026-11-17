@@ -27,6 +27,6 @@
 - [x] [Valid parentheses](neetcode-150/2_stack/20.valid-parentheses.cpp)
 - [x] [Min stack](neetcode-150/2_stack/155.min-stack.cpp)
 - [x] [Evaluate reverse polish notation](neetcode-150/2_stack/150.evaluate-reverse-polish-notation.cpp)
-- [ ] Daily Temperatures
+- [x] [Daily Temperatures](neetcode-150/2_stack/739.daily-temperatures.cpp)
 - [ ] Car Fleet
 - [ ] Largest Rectangle in Histogram
