@@ -4,7 +4,7 @@
 Layout assumed:  <list>/<N_section>/<id>.<slug>.<ext>
   e.g.           neetcode-150/2_stack/20.valid-parentheses.cpp
 
-README layout:   ## <List title>  ->  ### <Section title>  ->  - [x] [Title](path)
+README layout:   ## <List title>  ->  ### <Section title>  ->  - [x] [Title](path) ([problem](url))
 
 Usage:
   ./solved.py              # update README, commit, push
@@ -28,7 +28,9 @@ SOLUTION_EXTS = {".cpp", ".cc", ".c", ".py", ".java", ".js", ".ts", ".go", ".rs"
 LIST_TITLES = {"neetcode-150": "NeetCode 150", "blind-75": "Blind 75"}
 
 ITEM_RE = re.compile(r"^(\s*)- \[( |x|X)\] (.*?)\s*$")
-LINK_RE = re.compile(r"^\[(.*)\]\((.*)\)$")
+# "[Title](path)" optionally followed by " ([problem](url))"
+LINK_RE = re.compile(r"^\[([^\]]*)\]\(([^)]*)\)(?:\s*\(\[problem\]\([^)]*\)\))?$")
+LEETCODE_URL = "https://leetcode.com/problems/{slug}/"
 
 
 def norm(s: str) -> str:
@@ -70,6 +72,13 @@ class Problem:
     @property
     def link(self):
         return quote(self.rel.as_posix())
+
+    @property
+    def problem_url(self):
+        return LEETCODE_URL.format(slug=self.slug)
+
+    def entry(self, name):
+        return f"- [x] [{name}]({self.link}) ([problem]({self.problem_url}))"
 
     @property
     def list_title(self):
@@ -188,7 +197,7 @@ def ensure_section(lines, p: Problem):
 def mark(lines, p: Problem):
     """Mark/link problem p in lines. Returns a short description of what changed, or None."""
     s_start, s_end = ensure_section(lines, p)
-    entry = f"- [x] [{p.title}]({p.link})"
+    entry = p.entry(p.title)
     for i in range(s_start + 1, s_end):
         m = ITEM_RE.match(lines[i])
         if not m:
@@ -197,7 +206,7 @@ def mark(lines, p: Problem):
         lm = LINK_RE.match(text)
         name = lm.group(1) if lm else text
         if norm(name) in p.keys:
-            new = f"{indent}- [x] [{name}]({p.link})"
+            new = indent + p.entry(name)
             if lines[i] == new:
                 return None
             lines[i] = new
