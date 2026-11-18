@@ -1,6 +1,12 @@
 # LeetCode
 
+This is my repo for storing leetcode solutions (mainly for my practice)
+
+Leetcode account: https://leetcode.com/u/asterbot/
+
 ## NeetCode 150
+
+Problems: https://neetcode.io/roadmap
 
 ### Arrays & Hashing
 
