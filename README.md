@@ -28,5 +28,5 @@
 - [x] [Min stack](neetcode-150/2_stack/155.min-stack.cpp) ([problem](https://leetcode.com/problems/min-stack/))
 - [x] [Evaluate reverse polish notation](neetcode-150/2_stack/150.evaluate-reverse-polish-notation.cpp) ([problem](https://leetcode.com/problems/evaluate-reverse-polish-notation/))
 - [x] [Daily Temperatures](neetcode-150/2_stack/739.daily-temperatures.cpp) ([problem](https://leetcode.com/problems/daily-temperatures/))
-- [ ] Car Fleet
+- [x] [Car Fleet](neetcode-150/2_stack/853.car-fleet.cpp) ([problem](https://leetcode.com/problems/car-fleet/))
 - [ ] Largest Rectangle in Histogram
