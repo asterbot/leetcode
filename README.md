@@ -40,3 +40,4 @@ Problems: https://neetcode.io/roadmap
 ### Binary Search
 
 - [x] [Binary Search](neetcode-150/3_binary_search/704.binary-search.cpp) ([problem](https://leetcode.com/problems/binary-search/))
+- [x] [Search a 2D Matrix](neetcode-150/3_binary_search/74.search-a-2-d-matrix.cpp) ([problem](https://leetcode.com/problems/search-a-2-d-matrix/))
