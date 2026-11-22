@@ -36,3 +36,7 @@ Problems: https://neetcode.io/roadmap
 - [x] [Daily Temperatures](neetcode-150/2_stack/739.daily-temperatures.cpp) ([problem](https://leetcode.com/problems/daily-temperatures/))
 - [x] [Car Fleet](neetcode-150/2_stack/853.car-fleet.cpp) ([problem](https://leetcode.com/problems/car-fleet/))
 - [x] [Largest Rectangle in Histogram](neetcode-150/2_stack/84.largest-rectangle-in-histogram.cpp) ([problem](https://leetcode.com/problems/largest-rectangle-in-histogram/))
+
+### Binary Search
+
+- [x] [Binary Search](neetcode-150/3_binary_search/704.binary-search.cpp) ([problem](https://leetcode.com/problems/binary-search/))
