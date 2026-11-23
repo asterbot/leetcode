@@ -42,3 +42,4 @@ Problems: https://neetcode.io/roadmap
 - [x] [Binary Search](neetcode-150/3_binary_search/704.binary-search.cpp) ([problem](https://leetcode.com/problems/binary-search/))
 - [x] [Search a 2D Matrix](neetcode-150/3_binary_search/74.search-a-2-d-matrix.cpp) ([problem](https://leetcode.com/problems/search-a-2-d-matrix/))
 - [x] [Koko Eating Bananas](neetcode-150/3_binary_search/875.koko-eating-bananas.cpp) ([problem](https://leetcode.com/problems/koko-eating-bananas/))
+- [x] [Find Minimum in Rotated Sorted Array](neetcode-150/3_binary_search/153.find-minimum-in-rotated-sorted-array.cpp) ([problem](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/))
